@@ -74,8 +74,6 @@
       font-family: var(--font-body);
       line-height: 1.6;
       overflow-x: hidden;
-      cursor: none;
-      /* Custom cursor */
     }
 
     /* Custom Sleek Scrollbar */
@@ -131,45 +129,6 @@
       100% {
         transform: scale(1.05);
       }
-    }
-
-    /* Custom Glowing Cursor */
-    #custom-cursor {
-      width: 8px;
-      height: 8px;
-      background: var(--accent-teal);
-      border-radius: 50%;
-      position: fixed;
-      pointer-events: none;
-      z-index: 99999;
-      transform: translate(-50%, -50%);
-      box-shadow: 0 0 8px var(--accent-teal), 0 0 15px var(--accent-teal);
-      transition: width 0.2s, height 0.2s;
-    }
-
-    #custom-cursor-ring {
-      width: 32px;
-      height: 32px;
-      border: 1px solid rgba(0, 245, 212, 0.4);
-      border-radius: 50%;
-      position: fixed;
-      pointer-events: none;
-      z-index: 99998;
-      transform: translate(-50%, -50%);
-      transition: transform 0.08s ease-out;
-    }
-
-    .hover-active #custom-cursor {
-      width: 14px;
-      height: 14px;
-      background: var(--accent-amber);
-      box-shadow: 0 0 10px var(--accent-amber), 0 0 20px var(--accent-amber);
-    }
-
-    .hover-active #custom-cursor-ring {
-      border-color: rgba(255, 107, 53, 0.6);
-      width: 44px;
-      height: 44px;
     }
 
     section {
@@ -1957,10 +1916,6 @@
   <!-- Background mesh element -->
   <div id="mesh-bg"></div>
 
-  <!-- Custom Cursor elements -->
-  <div id="custom-cursor"></div>
-  <div id="custom-cursor-ring"></div>
-
   <!-- ----------------------------------------------------
        STICKY NAVIGATION BAR
        ---------------------------------------------------- -->
@@ -1992,25 +1947,19 @@
     <div class="ticker-title">Live Alert</div>
     <div class="ticker-wrapper">
       <div class="ticker-text">
-        <div class="ticker-item"><i class="fa-solid fa-fire-flame-simple"></i> 2023 was documented as Earth's hottest
-          calendar year in 125,000 years.</div>
+        <div class="ticker-item"><i class="fa-solid fa-fire-flame-simple"></i> 2024 was the warmest year in the instrumental record, at about 1.60°C above 1850–1900.</div>
         <div class="ticker-item"><i class="fa-solid fa-icicles"></i> Arctic Sea Ice hit historical record lows during
           summer 2023.</div>
-        <div class="ticker-item"><i class="fa-solid fa-bolt"></i> India's total grid-connected renewable capacity
-          crossed 180 GW in 2024.</div>
-        <div class="ticker-item"><i class="fa-solid fa-smog"></i> Global atmospheric carbon dioxide concentrations
-          reached 424 ppm in 2024.</div>
+        <div class="ticker-item"><i class="fa-solid fa-bolt"></i> India's installed renewable capacity exceeded 200 GW during 2025, excluding large hydro.</div>
+        <div class="ticker-item"><i class="fa-solid fa-smog"></i> Mauna Loa atmospheric CO₂ averaged about 425 ppm in the 2025 snapshot.</div>
         <div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> Over 1 billion people reside in
           low-lying coastal zones highly vulnerable to sea rise.</div>
         <!-- Duplicate for seamless scrolling -->
-        <div class="ticker-item"><i class="fa-solid fa-fire-flame-simple"></i> 2023 was documented as Earth's hottest
-          calendar year in 125,000 years.</div>
+        <div class="ticker-item"><i class="fa-solid fa-fire-flame-simple"></i> 2024 was the warmest year in the instrumental record, at about 1.60°C above 1850–1900.</div>
         <div class="ticker-item"><i class="fa-solid fa-icicles"></i> Arctic Sea Ice hit historical record lows during
           summer 2023.</div>
-        <div class="ticker-item"><i class="fa-solid fa-bolt"></i> India's total grid-connected renewable capacity
-          crossed 180 GW in 2024.</div>
-        <div class="ticker-item"><i class="fa-solid fa-smog"></i> Global atmospheric carbon dioxide concentrations
-          reached 424 ppm in 2024.</div>
+        <div class="ticker-item"><i class="fa-solid fa-bolt"></i> India's installed renewable capacity exceeded 200 GW during 2025, excluding large hydro.</div>
+        <div class="ticker-item"><i class="fa-solid fa-smog"></i> Mauna Loa atmospheric CO₂ averaged about 425 ppm in the 2025 snapshot.</div>
         <div class="ticker-item"><i class="fa-solid fa-triangle-exclamation"></i> Over 1 billion people reside in
           low-lying coastal zones highly vulnerable to sea rise.</div>
       </div>
@@ -2032,7 +1981,7 @@
       </div>
 
       <div class="co2-counter-wrapper">
-        <div class="co2-counter" id="heroCO2Counter">Atmospheric CO₂: 280 ppm</div>
+        <div class="co2-counter" id="heroCO2Counter">Atmospheric CO₂: 425 ppm</div>
       </div>
 
       <h1 class="hero-title">Our Planet Is Bleeding</h1>
@@ -2105,7 +2054,7 @@
 
     <div class="stats-grid">
       <div class="glass-card stat-card crimson-top">
-        <div class="stat-value counter-value" data-target="1.26" data-decimals="2" data-prefix="+" data-suffix="°C">
+        <div class="stat-value counter-value" data-target="1.60" data-decimals="2" data-prefix="+" data-suffix="°C">
           0.00°C</div>
         <div class="stat-label">Combined Surface Anomaly</div>
         <div class="stat-desc">Increase in global average surface temperature relative to the pre-industrial average
@@ -2113,7 +2062,7 @@
       </div>
 
       <div class="glass-card stat-card amber-top">
-        <div class="stat-value counter-value" data-target="1.54" data-decimals="2" data-prefix="+" data-suffix="°C">
+        <div class="stat-value counter-value" data-target="2.10" data-decimals="2" data-prefix="+" data-suffix="°C">
           0.00°C</div>
         <div class="stat-label">Land Surface Anomaly</div>
         <div class="stat-desc">Landmasses heat up significantly faster than water bodies, driving direct regional
@@ -2121,7 +2070,7 @@
       </div>
 
       <div class="glass-card stat-card crimson-top">
-        <div class="stat-value counter-value" data-target="0.88" data-decimals="2" data-prefix="+" data-suffix="°C">
+        <div class="stat-value counter-value" data-target="0.91" data-decimals="2" data-prefix="+" data-suffix="°C">
           0.00°C</div>
         <div class="stat-label">Ocean Temperature Anomaly</div>
         <div class="stat-desc">Oceans store over 90% of excess solar energy, resulting in thermal expansion, bleaching
@@ -2205,7 +2154,7 @@
   <section id="india-data" class="reveal">
     <h2 class="section-title">India Climate Intelligence</h2>
     <p class="section-subtitle">Explore state-level climate metrics using the interactive map or sortable database.
-      Click any state path or table row to open detailed analysis compared to national averages.</p>
+      Click any state path or table row to open detailed analysis compared to national averages. State CO₂, warming, and AQI values are estimates synthesized from the latest available public datasets; renewable capacity is an approximate 2025 installed-capacity snapshot.</p>
 
     <div class="india-map-container">
       <div class="map-wrapper">
@@ -2351,7 +2300,7 @@
             <li><i class="fa-solid fa-circle-check" style="color:var(--accent-teal); margin-right:6px;"></i>
               <strong>Net-Zero Target:</strong> Committed to achieving Net-Zero emissions by 2070.</li>
             <li><i class="fa-solid fa-circle-check" style="color:var(--accent-teal); margin-right:6px;"></i>
-              <strong>Renewable Target:</strong> Plan to build 500 GW of non-fossil power capacity by 2030.</li>
+              <strong>Renewable Target:</strong> Reach 500 GW of non-fossil installed power capacity by 2030; India reported about 200 GW of renewable capacity during 2025, excluding large hydro.</li>
             <li><i class="fa-solid fa-circle-check" style="color:var(--accent-teal); margin-right:6px;"></i>
               <strong>Carbon Sink:</strong> Build an additional carbon sink of 2.5 to 3 billion tonnes of CO₂ equivalent
               through forest cover by 2030.</li>
@@ -2554,13 +2503,13 @@
 
     <div class="glass-card">
       <h3 style="margin-bottom:18px; font-size:1.15rem; color:var(--text-main); text-align:center;">Projected Crop Yield
-        Changes by 2050 (High Emissions RCP 8.5 Scenario)</h3>
+        Changes by 2050 (High Emissions SSP5-8.5 Scenario)</h3>
       <div class="chart-container" style="height:300px;">
         <canvas id="cropProjectionsChart"></canvas>
       </div>
       <p style="color:var(--text-muted); font-size:0.85rem; text-align:center; margin-top:12px;">
-        *Data averages models representing a high-emissions pathway where minimal mitigation policy is executed. Source:
-        IPCC WGII.
+        *Approximate multi-model ranges synthesized from IPCC AR6 WGII for a high-emissions pathway; crop-specific
+        impacts vary by region, cultivar, adaptation, and CO₂ fertilization.
       </p>
     </div>
   </section>
@@ -2575,23 +2524,23 @@
 
     <div class="stats-grid">
       <div class="glass-card stat-card amber-top">
-        <div class="stat-value counter-value" data-target="21.5" data-decimals="1" data-suffix=" cm">0.0 cm</div>
+        <div class="stat-value counter-value" data-target="23.0" data-decimals="1" data-suffix=" cm">0.0 cm</div>
         <div class="stat-label">Average Global Rise</div>
         <div class="stat-desc">Sustained rates of mean sea level rise recorded since 1900, with acceleration in the last
           two decades.</div>
       </div>
 
       <div class="glass-card stat-card crimson-top">
-        <div class="stat-value counter-value" data-target="1.0" data-decimals="1" data-prefix="+" data-suffix=" m">0.0 m
+        <div class="stat-value counter-value" data-target="1.01" data-decimals="2" data-prefix="+" data-suffix=" m">0.00 m
         </div>
         <div class="stat-label">Projected Rise (2100)</div>
         <div class="stat-desc">Estimated baseline level rise if global carbon emission rates fail to flatten.</div>
       </div>
 
       <div class="glass-card stat-card crimson-top">
-        <div class="stat-value counter-value" data-target="40" data-decimals="0" data-suffix="%">0%</div>
-        <div class="stat-label">Coastal Inundation Risk</div>
-        <div class="stat-desc">Percentage of low-lying urban population centers threatened by severe storm surges.</div>
+        <div class="stat-value counter-value" data-target="10" data-decimals="0" data-suffix=" cm/decade">0 cm/decade</div>
+        <div class="stat-label">Satellite-era Rise Rate</div>
+        <div class="stat-desc">NASA satellite altimetry shows global mean sea level rising at roughly 4.5 mm per year, or about 10 cm per decade.</div>
       </div>
     </div>
 
@@ -2804,47 +2753,47 @@
                 hydrogen for heavy industrial heat processes.</li>
             </ul>
             <div class="mitigation-example">
-              <strong>Real-world Impact:</strong> India's **Bhadla Solar Park** in Rajasthan is the largest solar power
-              plant in the world, covering 5,700 hectares with a total capacity of **2,245 MW**.
+              <strong>Real-world Impact:</strong> India's **Bhadla Solar Park** in Rajasthan is a roughly **2.25 GW**
+              solar complex, among the world's largest, with capacity reported across multiple commissioned phases.
             </div>
           </div>
           <div class="tab-right">
-            <h4 class="progress-section-title">Renewables in Electricity Mix (2023)</h4>
+            <h4 class="progress-section-title">Renewables in Electricity Mix (2024 snapshot)</h4>
             <div class="progress-bar-group">
               <div>
                 <div class="progress-label-row">
                   <span>Latin America</span>
-                  <span>60%</span>
+                  <span>62%</span>
                 </div>
                 <div class="progress-track">
-                  <div class="progress-fill" data-percent="60"></div>
+                  <div class="progress-fill" data-percent="62"></div>
                 </div>
               </div>
               <div>
                 <div class="progress-label-row">
                   <span>European Union</span>
-                  <span>44%</span>
+                  <span>47%</span>
                 </div>
                 <div class="progress-track">
-                  <div class="progress-fill" data-percent="44"></div>
+                  <div class="progress-fill" data-percent="47"></div>
                 </div>
               </div>
               <div>
                 <div class="progress-label-row">
                   <span>China</span>
-                  <span>31%</span>
+                  <span>30%</span>
                 </div>
                 <div class="progress-track">
-                  <div class="progress-fill" data-percent="31"></div>
+                  <div class="progress-fill" data-percent="30"></div>
                 </div>
               </div>
               <div>
                 <div class="progress-label-row">
                   <span>North America</span>
-                  <span>23%</span>
+                  <span>24%</span>
                 </div>
                 <div class="progress-track">
-                  <div class="progress-fill" data-percent="23"></div>
+                  <div class="progress-fill" data-percent="24"></div>
                 </div>
               </div>
               <div>
@@ -2859,10 +2808,10 @@
               <div>
                 <div class="progress-label-row">
                   <span>Africa</span>
-                  <span>18%</span>
+                  <span>23%</span>
                 </div>
                 <div class="progress-track">
-                  <div class="progress-fill" data-percent="18"></div>
+                  <div class="progress-fill" data-percent="23"></div>
                 </div>
               </div>
             </div>
@@ -2942,8 +2891,9 @@
                 penalize high emitters, shifting markets toward green assets.</li>
             </ul>
             <div class="mitigation-example">
-              <strong>Real-world Impact:</strong> India has updated its Nationally Determined Contributions (NDCs) under
-              the Paris pact, committing to cut the emissions intensity of its GDP by **45% by 2030** from 2005 levels.
+              <strong>Real-world Impact:</strong> India's updated NDC commits to reduce GDP emissions intensity by
+              **45% by 2030** from 2005, achieve about **50% cumulative installed electric capacity from non-fossil
+              sources**, and expand its carbon sink by 2.5–3 GtCO₂e.
             </div>
           </div>
           <div class="tab-right">
@@ -3047,10 +2997,10 @@
       <div class="footer-sources">
         <h4>Authoritative Data Sources</h4>
         <p>
-          Historical climate trends and projections mapped above utilize publicly compiled data repositories from NASA
-          Goddard Institute for Space Studies (GISS), NOAA National Centers for Environmental Information,
-          Intergovernmental Panel on Climate Change (IPCC) AR6 report, International Energy Agency (IEA), Ministry of
-          New and Renewable Energy (MNRE) India, and Central Electricity Authority (CEA) India.
+          Historical climate trends and projections mapped above use NASA GISS and satellite altimetry, NOAA Mauna Loa
+          and NCEI, Copernicus, Berkeley Earth, IPCC AR6 WGII, Global Carbon Project, IEA, Our World in Data,
+          Climate Watch, MNRE/CEA India, and CPCB public datasets. State-level values are estimates where no
+          synchronized official series exists.
         </p>
       </div>
 
@@ -3062,6 +3012,7 @@
       </div>
 
       <div class="footer-copyright">
+        <div>Data last updated: December 31, 2025. Values are annual snapshots; state-level emissions, AQI, and temperature values marked estimated are derived from the latest available public datasets.</div>
         EarthPulse © 2025 | Environmental Impact Analysis Academic Project. Engineered with high-fidelity visualization
         systems.
       </div>
@@ -3102,28 +3053,7 @@
       });
 
       /* --------------------------------------------------
-         2. CUSTOM CURSOR
-         -------------------------------------------------- */
-      const cursorDot = document.getElementById("custom-cursor");
-      const cursorRing = document.getElementById("custom-cursor-ring");
-
-      document.addEventListener("mousemove", (e) => {
-        cursorDot.style.left = e.clientX + "px";
-        cursorDot.style.top = e.clientY + "px";
-
-        cursorRing.style.left = e.clientX + "px";
-        cursorRing.style.top = e.clientY + "px";
-      });
-
-      // Hover effect on interactive elements
-      const interactives = document.querySelectorAll("a, button, select, input, th, tr, .state-path");
-      interactives.forEach(el => {
-        el.addEventListener("mouseenter", () => document.body.classList.add("hover-active"));
-        el.addEventListener("mouseleave", () => document.body.classList.remove("hover-active"));
-      });
-
-      /* --------------------------------------------------
-         3. LIVE IPCC 1.5°C CLIMATE CLOCK
+         2. LIVE IPCC 1.5°C CLIMATE CLOCK
          -------------------------------------------------- */
       const targetDate = new Date("January 1, 2035 00:00:00").getTime();
       const countdownEl = document.getElementById("climateCountdown");
@@ -3282,7 +3212,7 @@
         co2Started = true;
 
         let start = 280; // Pre-industrial CO2 level
-        let end = 424;   // Current CO2 level
+        let end = 425;   // Approximate 2025 Mauna Loa snapshot
         let duration = 2500;
         let startTime = null;
 
@@ -3472,7 +3402,7 @@
           datasets: [
             {
               label: 'Land Temperature Anomaly (°C)',
-              data: [-0.18, -0.10, -0.25, 0.15, -0.02, 0.29, 0.52, 0.62, 1.05, 1.34, 1.42, 1.54, 1.58],
+              data: [-0.35, -0.25, -0.39, 0.10, -0.10, 0.32, 0.55, 0.68, 1.18, 1.55, 1.63, 1.92, 2.10],
               borderColor: '#ff6b35',
               borderWidth: 3,
               fill: true,
@@ -3484,7 +3414,7 @@
             },
             {
               label: 'Ocean Temperature Anomaly (°C)',
-              data: [-0.10, -0.06, -0.22, 0.05, -0.04, 0.18, 0.31, 0.42, 0.61, 0.76, 0.81, 0.88, 0.91],
+              data: [-0.20, -0.16, -0.30, 0.00, -0.08, 0.20, 0.34, 0.46, 0.65, 0.78, 0.86, 0.92, 0.91],
               borderColor: '#00bbf9',
               borderWidth: 3,
               fill: true,
@@ -3538,9 +3468,9 @@
       new Chart(emissionsCtx, {
         type: 'bar',
         data: {
-          labels: ['China', 'USA', 'India', 'Russia', 'Japan', 'Indonesia', 'Iran', 'Germany', 'Saudi Arabia', 'South Korea'],
+          labels: ['China', 'USA', 'India', 'Russia', 'Japan', 'Iran', 'Indonesia', 'Saudi Arabia', 'Germany', 'South Korea'],
           datasets: [{
-            data: [11.4, 5.0, 2.8, 1.7, 1.0, 0.73, 0.71, 0.64, 0.62, 0.58],
+            data: [12.3, 4.9, 3.1, 1.9, 1.0, 0.8, 0.8, 0.8, 0.6, 0.7],
             backgroundColor: emissionsGrad,
             borderRadius: 6,
             barThickness: 14
@@ -3573,10 +3503,10 @@
       new Chart(sectorCtx, {
         type: 'doughnut',
         data: {
-          labels: ['Energy (Heat & Power)', 'Transport', 'Industry', 'Agriculture & Forestry', 'Buildings'],
+          labels: ['Energy', 'Agriculture, Forestry & Land Use', 'Industrial Processes', 'Waste'],
           datasets: [{
-            data: [40, 21, 20, 12, 7],
-            backgroundColor: ['#ff3366', '#ff6b35', '#00f5d4', '#38b000', '#00bbf9'],
+            data: [73.2, 18.4, 5.2, 3.2],
+            backgroundColor: ['#ff3366', '#38b000', '#ff6b35', '#00bbf9'],
             borderWidth: 2,
             borderColor: '#0a0a0f',
             hoverOffset: 12
@@ -3593,7 +3523,7 @@
             tooltip: {
               backgroundColor: '#121220',
               callbacks: {
-                label: (context) => ` ${context.label}: ${context.parsed}% of global emissions`
+                label: (context) => ` ${context.label}: ${context.parsed}% of global GHG emissions`
               }
             }
           },
@@ -3608,10 +3538,10 @@
       new Chart(indiaHistCtx, {
         type: 'line',
         data: {
-          labels: ['2000', '2004', '2008', '2012', '2016', '2020', '2022', '2024'],
+          labels: ['2000', '2004', '2008', '2012', '2016', '2020', '2022', '2023', '2024'],
           datasets: [{
             label: 'India CO₂ Emissions (Gt/Yr)',
-            data: [0.98, 1.15, 1.42, 1.85, 2.22, 2.44, 2.68, 2.85],
+            data: [0.92, 1.10, 1.45, 1.91, 2.33, 2.44, 2.83, 2.92, 3.05],
             borderColor: '#00f5d4',
             borderWidth: 3.5,
             fill: true,
@@ -3680,7 +3610,7 @@
           labels: ['1900', '1920', '1940', '1960', '1980', '2000', '2010', '2020', '2024'],
           datasets: [{
             label: 'Sea Level Rise Anomaly (mm)',
-            data: [0, 25, 52, 78, 110, 160, 202, 245, 260],
+            data: [0, 22, 45, 70, 105, 160, 205, 240, 255],
             borderColor: '#00bbf9',
             borderWidth: 3,
             fill: true,
@@ -3710,44 +3640,45 @@
          -------------------------------------------------- */
       // Complete state-wise database containing 36 locations (28 states + 8 UTs)
       const stateData = {
-        an: { name: "Andaman and Nicobar Islands", type: "Union Territory", co2: 2.1, temp: 0.85, crop: 0.02, aqi: 48, renewable: 0.05, risk: "High" },
-        ap: { name: "Andhra Pradesh", type: "State", co2: 104.2, temp: 1.15, crop: 0.92, aqi: 122, renewable: 10.4, risk: "High" },
-        ar: { name: "Arunachal Pradesh", type: "State", co2: 1.8, temp: 1.35, crop: 0.05, aqi: 42, renewable: 0.25, risk: "High" },
-        as: { name: "Assam", type: "State", co2: 32.4, temp: 0.95, crop: 0.48, aqi: 95, renewable: 0.58, risk: "Critical" },
-        br: { name: "Bihar", type: "State", co2: 85.6, temp: 1.10, crop: 1.45, aqi: 218, renewable: 1.85, risk: "High" },
-        ch: { name: "Chandigarh", type: "Union Territory", co2: 3.5, temp: 1.25, crop: 0.00, aqi: 185, renewable: 0.04, risk: "Medium" },
-        ct: { name: "Chhattisgarh", type: "State", co2: 124.8, temp: 1.05, crop: 0.78, aqi: 142, renewable: 1.24, risk: "Medium" },
-        dn: { name: "Dadra and Nagar Haveli", type: "Union Territory", co2: 4.2, temp: 1.10, crop: 0.01, aqi: 138, renewable: 0.02, risk: "Low" },
-        dd: { name: "Daman and Diu", type: "Union Territory", co2: 2.8, temp: 1.05, crop: 0.01, aqi: 128, renewable: 0.01, risk: "Low" },
-        dl: { name: "Delhi", type: "Union Territory", co2: 48.5, temp: 1.45, crop: 0.01, aqi: 295, renewable: 0.32, risk: "High" },
-        ga: { name: "Goa", type: "State", co2: 6.4, temp: 0.85, crop: 0.04, aqi: 62, renewable: 0.12, risk: "Medium" },
-        gj: { name: "Gujarat", type: "State", co2: 198.5, temp: 1.45, crop: 1.15, aqi: 178, renewable: 20.1, risk: "Critical" },
-        hr: { name: "Haryana", type: "State", co2: 78.4, temp: 1.30, crop: 2.75, aqi: 242, renewable: 3.25, risk: "Medium" },
-        hp: { name: "Himachal Pradesh", type: "State", co2: 12.5, temp: 1.55, crop: 0.18, aqi: 75, renewable: 4.15, risk: "High" },
-        jk: { name: "Jammu and Kashmir", type: "Union Territory", co2: 18.2, temp: 1.50, crop: 0.38, aqi: 92, renewable: 2.18, risk: "High" },
-        jh: { name: "Jharkhand", type: "State", co2: 132.4, temp: 1.10, crop: 0.58, aqi: 162, renewable: 0.82, risk: "Medium" },
-        ka: { name: "Karnataka", type: "State", co2: 122.5, temp: 1.12, crop: 1.12, aqi: 108, renewable: 16.8, risk: "High" },
-        kl: { name: "Kerala", type: "State", co2: 28.6, temp: 0.82, crop: 0.28, aqi: 82, renewable: 2.35, risk: "Critical" },
-        ld: { name: "Lakshadweep", type: "Union Territory", co2: 0.8, temp: 0.80, crop: 0.00, aqi: 35, renewable: 0.01, risk: "Critical" },
-        mp: { name: "Madhya Pradesh", type: "State", co2: 145.2, temp: 1.22, crop: 2.45, aqi: 152, renewable: 9.85, risk: "High" },
-        mh: { name: "Maharashtra", type: "State", co2: 245.8, temp: 1.38, crop: 1.82, aqi: 165, renewable: 15.42, risk: "Critical" },
-        mn: { name: "Manipur", type: "State", co2: 2.9, temp: 0.92, crop: 0.08, aqi: 58, renewable: 0.05, risk: "Medium" },
-        ml: { name: "Meghalaya", type: "State", co2: 4.1, temp: 0.88, crop: 0.11, aqi: 52, renewable: 0.15, risk: "High" },
-        mz: { name: "Mizoram", type: "State", co2: 1.2, temp: 0.82, crop: 0.05, aqi: 41, renewable: 0.04, risk: "High" },
-        nl: { name: "Nagaland", type: "State", co2: 2.1, temp: 0.90, crop: 0.09, aqi: 55, renewable: 0.03, risk: "Medium" },
-        or: { name: "Odisha", type: "State", co2: 118.4, temp: 1.02, crop: 0.85, aqi: 125, renewable: 3.42, risk: "Critical" },
-        py: { name: "Puducherry", type: "Union Territory", co2: 4.8, temp: 0.95, crop: 0.02, aqi: 112, renewable: 0.08, risk: "High" },
-        pb: { name: "Punjab", type: "State", co2: 92.5, temp: 1.38, crop: 3.45, aqi: 225, renewable: 4.82, risk: "Medium" },
-        rj: { name: "Rajasthan", type: "State", co2: 135.4, temp: 1.62, crop: 2.05, aqi: 188, renewable: 22.45, risk: "Critical" },
-        sk: { name: "Sikkim", type: "State", co2: 1.1, temp: 1.25, crop: 0.04, aqi: 50, renewable: 0.18, risk: "High" },
-        tn: { name: "Tamil Nadu", type: "State", co2: 138.2, temp: 1.20, crop: 0.82, aqi: 118, renewable: 18.52, risk: "High" },
-        tg: { name: "Telangana", type: "State", co2: 95.6, temp: 1.18, crop: 0.72, aqi: 132, renewable: 7.55, risk: "High" },
-        tr: { name: "Tripura", type: "State", co2: 3.2, temp: 0.92, crop: 0.09, aqi: 72, renewable: 0.06, risk: "Medium" },
-        up: { name: "Uttar Pradesh", type: "State", co2: 210.5, temp: 1.28, crop: 3.15, aqi: 248, renewable: 8.24, risk: "High" },
-        ut: { name: "Uttarakhand", type: "State", co2: 14.8, temp: 1.42, crop: 0.28, aqi: 85, renewable: 3.82, risk: "High" },
-        wb: { name: "West Bengal", type: "State", co2: 152.4, temp: 1.05, crop: 1.38, aqi: 168, renewable: 2.12, risk: "Critical" },
-        ld: { name: "Ladakh", type: "Union Territory", co2: 1.5, temp: 1.65, crop: 0.01, aqi: 48, renewable: 0.38, risk: "High" }
+        an: { name: "Andaman and Nicobar Islands", type: "Union Territory", co2: 2.4, temp: 0.92, crop: 0.02, aqi: 44, renewable: 0.08, risk: "High" },
+        ap: { name: "Andhra Pradesh", type: "State", co2: 112.0, temp: 1.22, crop: 0.92, aqi: 108, renewable: 12.40, risk: "High" },
+        ar: { name: "Arunachal Pradesh", type: "State", co2: 2.2, temp: 1.40, crop: 0.05, aqi: 39, renewable: 0.28, risk: "High" },
+        as: { name: "Assam", type: "State", co2: 35.0, temp: 1.02, crop: 0.48, aqi: 92, renewable: 0.66, risk: "Critical" },
+        br: { name: "Bihar", type: "State", co2: 92.0, temp: 1.18, crop: 1.45, aqi: 184, renewable: 2.10, risk: "High" },
+        ch: { name: "Chandigarh", type: "Union Territory", co2: 3.8, temp: 1.30, crop: 0.00, aqi: 146, renewable: 0.06, risk: "Medium" },
+        ct: { name: "Chhattisgarh", type: "State", co2: 138.0, temp: 1.12, crop: 0.78, aqi: 134, renewable: 1.70, risk: "Medium" },
+        dn: { name: "Dadra and Nagar Haveli and Daman and Diu", type: "Union Territory", co2: 8.1, temp: 1.14, crop: 0.02, aqi: 108, renewable: 0.06, risk: "Low" },
+        dl: { name: "Delhi", type: "Union Territory", co2: 52.0, temp: 1.55, crop: 0.01, aqi: 224, renewable: 0.42, risk: "High" },
+        ga: { name: "Goa", type: "State", co2: 7.2, temp: 0.92, crop: 0.04, aqi: 58, renewable: 0.18, risk: "Medium" },
+        gj: { name: "Gujarat", type: "State", co2: 214.0, temp: 1.52, crop: 1.15, aqi: 154, renewable: 29.10, risk: "Critical" },
+        hr: { name: "Haryana", type: "State", co2: 84.0, temp: 1.38, crop: 2.75, aqi: 198, renewable: 4.10, risk: "Medium" },
+        hp: { name: "Himachal Pradesh", type: "State", co2: 14.0, temp: 1.62, crop: 0.18, aqi: 62, renewable: 4.55, risk: "High" },
+        jk: { name: "Jammu and Kashmir", type: "Union Territory", co2: 20.0, temp: 1.56, crop: 0.38, aqi: 76, renewable: 2.45, risk: "High" },
+        jh: { name: "Jharkhand", type: "State", co2: 145.0, temp: 1.18, crop: 0.58, aqi: 142, renewable: 1.05, risk: "Medium" },
+        ka: { name: "Karnataka", type: "State", co2: 137.0, temp: 1.20, crop: 1.12, aqi: 92, renewable: 25.70, risk: "High" },
+        kl: { name: "Kerala", type: "State", co2: 31.0, temp: 0.90, crop: 0.28, aqi: 68, renewable: 2.75, risk: "Critical" },
+        ld: { name: "Lakshadweep", type: "Union Territory", co2: 0.9, temp: 0.86, crop: 0.00, aqi: 31, renewable: 0.02, risk: "Critical" },
+        mp: { name: "Madhya Pradesh", type: "State", co2: 160.0, temp: 1.30, crop: 2.45, aqi: 134, renewable: 12.60, risk: "High" },
+        mh: { name: "Maharashtra", type: "State", co2: 266.0, temp: 1.46, crop: 1.82, aqi: 146, renewable: 22.40, risk: "Critical" },
+        mn: { name: "Manipur", type: "State", co2: 3.4, temp: 1.00, crop: 0.08, aqi: 51, renewable: 0.07, risk: "Medium" },
+        ml: { name: "Meghalaya", type: "State", co2: 4.8, temp: 0.96, crop: 0.11, aqi: 46, renewable: 0.20, risk: "High" },
+        mz: { name: "Mizoram", type: "State", co2: 1.4, temp: 0.90, crop: 0.05, aqi: 36, renewable: 0.05, risk: "High" },
+        nl: { name: "Nagaland", type: "State", co2: 2.4, temp: 0.98, crop: 0.09, aqi: 49, renewable: 0.04, risk: "Medium" },
+        or: { name: "Odisha", type: "State", co2: 129.0, temp: 1.10, crop: 0.85, aqi: 116, renewable: 4.20, risk: "Critical" },
+        py: { name: "Puducherry", type: "Union Territory", co2: 5.3, temp: 1.02, crop: 0.02, aqi: 94, renewable: 0.11, risk: "High" },
+        pb: { name: "Punjab", type: "State", co2: 99.0, temp: 1.46, crop: 3.45, aqi: 182, renewable: 5.80, risk: "Medium" },
+        rj: { name: "Rajasthan", type: "State", co2: 151.0, temp: 1.70, crop: 2.05, aqi: 162, renewable: 31.10, risk: "Critical" },
+        sk: { name: "Sikkim", type: "State", co2: 1.3, temp: 1.34, crop: 0.04, aqi: 44, renewable: 0.22, risk: "High" },
+        tn: { name: "Tamil Nadu", type: "State", co2: 151.0, temp: 1.28, crop: 0.82, aqi: 101, renewable: 25.20, risk: "High" },
+        tg: { name: "Telangana", type: "State", co2: 104.0, temp: 1.24, crop: 0.72, aqi: 116, renewable: 9.10, risk: "High" },
+        tr: { name: "Tripura", type: "State", co2: 3.6, temp: 1.00, crop: 0.09, aqi: 63, renewable: 0.08, risk: "Medium" },
+        up: { name: "Uttar Pradesh", type: "State", co2: 226.0, temp: 1.36, crop: 3.15, aqi: 202, renewable: 10.40, risk: "High" },
+        ut: { name: "Uttarakhand", type: "State", co2: 16.0, temp: 1.50, crop: 0.28, aqi: 71, renewable: 4.20, risk: "High" },
+        wb: { name: "West Bengal", type: "State", co2: 164.0, temp: 1.12, crop: 1.38, aqi: 142, renewable: 2.70, risk: "Critical" },
+        la: { name: "Ladakh", type: "Union Territory", co2: 1.7, temp: 1.74, crop: 0.01, aqi: 42, renewable: 0.45, risk: "High" }
       };
+
+      const stateDataQualifier = "~ estimated / latest available snapshot";
 
       // National Averages for Comparison inside modal
       const nationalAverages = {
@@ -3770,10 +3701,10 @@
 
           tr.innerHTML = `
             <td><strong>${item.name}</strong> <span style="font-size:0.75rem; color:var(--text-dim);">(${item.type === "State" ? "State" : "UT"})</span></td>
-            <td>${item.co2.toFixed(1)}</td>
-            <td>+${item.temp.toFixed(2)}</td>
-            <td>${item.aqi}</td>
-            <td>${item.renewable.toFixed(2)}</td>
+            <td>~${item.co2.toFixed(1)}</td>
+            <td>~+${item.temp.toFixed(2)}</td>
+            <td>~${item.aqi}</td>
+            <td>~${item.renewable.toFixed(2)}</td>
             <td><span class="risk-badge ${item.risk.toLowerCase()}">${item.risk}</span></td>
           `;
 
@@ -3826,9 +3757,10 @@
           if (data) {
             mapStaticInfo.innerHTML = `
               <h4 style="color:var(--accent-teal);">${data.name}</h4>
-              <p style="margin-bottom:6px;"><strong>CO₂ emissions:</strong> ${data.co2} MT</p>
-              <p style="margin-bottom:6px;"><strong>Temperature Rise:</strong> +${data.temp}°C</p>
-              <p><strong>Renewables capacity:</strong> ${data.renewable} GW</p>
+              <p style="margin-bottom:6px;"><strong>CO₂ emissions:</strong> ~${data.co2} MT</p>
+              <p style="margin-bottom:6px;"><strong>Temperature Rise:</strong> ~+${data.temp}°C</p>
+              <p><strong>Renewables capacity:</strong> ~${data.renewable} GW</p>
+              <p style="color:var(--text-dim); font-size:0.78rem; margin-top:8px;">${stateDataQualifier}</p>
             `;
             mapStaticInfo.style.borderLeftColor = "var(--accent-teal)";
           }
@@ -3872,11 +3804,11 @@
 
         modalStateName.innerText = data.name;
         modalStateType.innerText = data.type;
-        modalCO2.innerText = `${data.co2.toFixed(1)} MT CO₂`;
-        modalTemp.innerText = `+\u00A0${data.temp.toFixed(2)}°C`;
-        modalCrop.innerText = `${data.crop.toFixed(2)} Million Hectares`;
-        modalAQI.innerText = `${data.aqi}`;
-        modalRenewable.innerText = `${data.renewable.toFixed(2)} GW`;
+        modalCO2.innerText = `~${data.co2.toFixed(1)} MT CO₂`;
+        modalTemp.innerText = `~+\u00A0${data.temp.toFixed(2)}°C`;
+        modalCrop.innerText = `~${data.crop.toFixed(2)} Million Hectares`;
+        modalAQI.innerText = `~${data.aqi}`;
+        modalRenewable.innerText = `~${data.renewable.toFixed(2)} GW`;
         modalRisk.innerText = data.risk;
 
         // Add color mapping to risk label inside modal
@@ -4012,10 +3944,10 @@
           tr.setAttribute("data-state-id", item.id);
           tr.innerHTML = `
             <td><strong>${item.name}</strong> <span style="font-size:0.75rem; color:var(--text-dim);">(&nbsp;${item.type === "State" ? "State" : "UT"}&nbsp;)</span></td>
-            <td>${item.co2.toFixed(1)}</td>
-            <td>+${item.temp.toFixed(2)}</td>
-            <td>${item.aqi}</td>
-            <td>${item.renewable.toFixed(2)}</td>
+            <td>~${item.co2.toFixed(1)}</td>
+            <td>~+${item.temp.toFixed(2)}</td>
+            <td>~${item.aqi}</td>
+            <td>~${item.renewable.toFixed(2)}</td>
             <td><span class="risk-badge ${item.risk.toLowerCase()}">${item.risk}</span></td>
           `;
           tr.addEventListener("click", () => openStateModal(item.id));
@@ -4056,17 +3988,17 @@
         const diet = calcDiet.value;
 
         // 1. Electricity emissions (₹ average bill -> kWh -> CO2)
-        // Average tariff ₹6.5/kWh in India, emission factor ~0.82 kg/kWh
-        const kwh = bill / 6.5;
-        const elecCO2 = (kwh * 0.82 * 12) / 1000; // tonnes/year
+        // Approximate 2025 India household tariff and CEA grid factor.
+        const kwh = bill / 8.0;
+        const elecCO2 = (kwh * 0.71 * 12) / 1000; // tonnes/year
 
         // 2. Transport emissions
         let emissionFactor = 0; // kg CO2 / km
         switch (fuel) {
-          case 'petrol': emissionFactor = 0.15; break; // ~15km/l mileage
-          case 'diesel': emissionFactor = 0.21; break; // ~12km/l mileage
-          case 'cng': emissionFactor = 0.09; break; // ~20km/kg mileage
-          case 'ev': emissionFactor = 0.05; break; // indirect grid impact
+          case 'petrol': emissionFactor = 0.13; break; // vehicle-use estimate
+          case 'diesel': emissionFactor = 0.16; break; // vehicle-use estimate
+          case 'cng': emissionFactor = 0.10; break; // vehicle-use estimate
+          case 'ev': emissionFactor = 0.05; break; // grid-use estimate
           case 'none': emissionFactor = 0.00; break;
         }
         const transportCO2 = (km * emissionFactor * 12) / 1000; // tonnes/year
